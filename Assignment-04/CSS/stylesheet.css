@@ -1,0 +1,52 @@
+/*
+Student Name : Tamana Seddiqi
+student Number : 991528861
+*/
+
+body{box-sizing : border-box; background-image: url("https://cdn.hipwallpaper.com/i/4/61/eN0sr9.png");}
+
+
+.box
+ {
+   display :grid;
+   grid-template-columns: 50% 50%;
+   grid-template-areas: "h h"
+                        "p p"
+                        "e f"
+                        "c c"
+                        "s s";
+
+  }
+
+  .box
+  {
+    width : 50% ;
+    margin : 0% 25%;
+    height: 100%;
+  }
+
+  .h{grid-area : h; background-color : #dacdaa; text-align : center;}
+
+  .p{grid-area : p; background-color : #ccdd33; padding : 1% 3% 2% 3%; }
+
+  .e{grid-area : e; background-color : #ffbb2a; padding : 1% 3% 2% 3%; }
+
+  .f{grid-area : f; background-color : #acbdef; padding :  1% 3% 2% 3%; }
+
+  .c{grid-area : c; background-color : #fedcba; padding : 1% 3% 0% 1%; }
+
+  .s{grid-area : s; background-color : #fedcba; padding-left : 2%; }
+
+  input[type = text] , input [type = email]
+  {
+    display :inline-flex ;
+    justify-content : space-evenly;
+    padding-left: 10px;
+    margin-right: 20px;
+  }
+
+  input[type = checked]{margin-left : 130px;}
+  #two1{margin-left : 16px;}
+  #two{margin-left: 130px;}
+  input{margin-bottom : 10px;}
+  label{width : 120px; display : inline-block;}

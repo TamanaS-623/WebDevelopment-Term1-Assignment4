@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+Student Name : Tamana Seddiqi
+student Number : 991528861
+-->
+
+<html>
+  <head>
+    <title>Tamana Seddiqi</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/stylesheet.css">
+   </head>
+  <body>
+
+    <form  class ="box" action = "" name="form1" validate>
+
+    <div class= "h">
+        <h1> Assignment - 04 </h1>
+        <h2>  Tamana seddiqi --------- 991528861</h2>
+    </div>
+
+    <div class = "p">
+        <h3>Personal info input fields</h3>
+        <label >Last Name :</label> <input id = "one" type ="text" name="LastName" value ="Seddiqi" required/>
+        <label >First Name : </label><input id = "one" type ="text" name="FirstName" value="Tamana" required/><br /><br />
+        <label >Student Number : </label><input id = "one" type ="text" name="StudentNumber" value ="991528861" />
+        <label >Email : </label><input id = "one" type ="email" name="Email" value ="seddiqi@sheridancollege.ca" />
+    </div>
+
+    <div class = "e">
+        <h3>Sheridan experience and input fields</h3>
+        <label >Starting Date : </label><input type = "date" name="Starting Date" /><br />
+        <label>Post-secondary experience : </label><input type = "number" name="post-secondary experience" value ="0"/><br />
+       <label>Main Compus : </label><input type="radio" name="Main Compus" value="Davis" checked> Davis
+                      <input type="radio" name="Main Compus" value="Trafalgr">Trafalgr
+                      <input type="radio" name="Main Compus" value="HMC"> HMC
+    </div>
+
+    <div class = "f">
+        <h3>Financial data</h3>
+        Received Amount : <input type = "number" placeholder="Received Amount" /><br />
+        Source of funds : <input id = "two1"type="checkbox" name="Scholarship" value="Scholarship">Scholarship<br />
+                          <input id = "two" type="checkbox" name="Scholarship" value="RESP">RESP<br />
+                          <input id = "two" type="checkbox" name="Scholarship" value="Bursary">Bursary<br />
+                          <input id = "two" type="checkbox" name="Scholarship" value="Private">Private<br />
+                          <input id = "two" type="checkbox" name="Scholarship" value="OSAP">OSAP
+    </div>
+
+    <div class = "c">
+        <h3>Any Comment ???</h3>
+        <textarea type ="comment" rows ="10px" cols =" 40%" placeholder="Enter your comment here ..."></textarea>
+    </div>
+
+    <div class = "s">
+        <input type ="submit" value = "Submit" onclick ="test()" />
+        <input type ="reset" value ="Reset"  />
+    </div>
+
+  </form>
+
+  <script>
+  function test()
+  {
+    var x = document.forms.form1.FirstName.value;
+    var y = document.forms.form1.LastName.value;
+    var z = document.forms.form1.StudentNumber.value;
+    if(( x == "") || (y == ""))
+    {
+      window.alert("Please fill the required fields");
+    }
+    else
+    {
+      window.alert(" Hi " +x+ " " +y+ " \n Student Number : " +z);
+    }
+}
+  </script>
+
+  </body>
+</html>
